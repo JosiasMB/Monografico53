@@ -64,7 +64,7 @@ form img {
   width: 35%;
 }
 
-input {
+form input {
   background-color: #eee;
   border: none;
   padding: 12px 15px;
@@ -195,8 +195,22 @@ input {
 .container.right-panel-active .overlay-right {
   transform: translateX(20%);
 }
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1100px) {
+  .container {
+    width: 90%;
+  }
+  h1 {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  form input {
+    margin: 5px 0;
+  }
+}
+@media screen and (max-width: 750px) {
   .container {
     border-radius: 0;
     width: 80%;
@@ -212,11 +226,12 @@ input {
   form {
     padding: 0;
   }
+
   .escudo {
     width: 35%;
   }
   header {
-    margin-bottom: 20px;
+    margin-bottom: 10%;
   }
   h1 {
     font-size: 20px;
