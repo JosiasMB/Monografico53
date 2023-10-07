@@ -1,4 +1,5 @@
 const mylinks = document.getElementById("mylinks");
+const closeButton = document.getElementById("close-button");
 
 // Menu en pantalla movil
 function displayLinks() {
@@ -10,12 +11,8 @@ menu.addEventListener("click", () => {
   displayLinks();
 });
 
-document.addEventListener("click", function (event) {
+closeButton.addEventListener("click", function (event) {
   if (!menu.contains(event.target) && event.target !== mylinks) {
     mylinks.style.display = "none";
   }
 });
-
-// if (screen.width > 750 && mylinks.style.display === "none") {
-//   mylinks.style.display = "block";
-// }
