@@ -8,6 +8,7 @@
       rel="shortcut icon"
       href="https://uasdvirtual.uasd.edu.do/diplomados/theme/image.php/uasdvirtual/theme/1695480598/favicon"
     />
+
     <link rel="stylesheet" href="./Assets/style.css" />
   </head>
   <body>
@@ -15,14 +16,29 @@
       <nav class="menu">
         <div class="logo">
           <img
-            class="logoT"
+            class=""
             src="https://uasd.edu.do/wp-content/themes/pagina/img/logo_uasd.svg"
             alt=""
           />
+
           <span class="logoT"> EGRESADOS</span>
+          <a src="" class="icon">
+            <svg
+              id="menu-button"
+              fill="#FFFFFF"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 50 50"
+              width="50px"
+              height="50px"
+            >
+              <path
+                d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"
+              />
+            </svg>
+          </a>
         </div>
 
-        <ul>
+        <ul id="mylinks" class="none">
           <li><a href="./">Inicio</a></li>
           <li>
             <a href="https://uasd.edu.do/estudiantes/" target="_blank"
@@ -61,13 +77,17 @@
 
         <h2>Egresados</h2>
 
-        <select id="category">
-          <option value="" disabled selected>Area profesinal</option>
-          <option value="Informatica">Informatica</option>
-          <option value="Ciencias">Ciencias</option>
-          <option value="Leyes">Leyes</option>
-        </select>
-        <button class="filter-button" onclick="filterResults()">Filtar</button>
+        <div class="search-container-data">
+          <select id="category">
+            <option value="" disabled selected>Area profesinal</option>
+            <option value="Informatica">Informatica</option>
+            <option value="Ciencias">Ciencias</option>
+            <option value="Leyes">Leyes</option>
+          </select>
+          <button class="filter-button" onclick="filterResults()">
+            Filtar
+          </button>
+        </div>
       </div>
       <div class="cuerpo">
         <div class="tarjeta">
@@ -733,20 +753,24 @@
       </div>
     </main>
     <script src="./Assets/App.js"></script>
+    <script src="./Assets/MenuMovil.js"></script>
 
     <footer>
       <div class="logoFooter">
-        <img
-          class="logo"
-          src="https://uasd.edu.do/wp-content/themes/pagina/img/logo_uasd.svg"
-          alt=""
-        />
+        <a href="./">
+          <img
+            class="logo"
+            src="https://uasd.edu.do/wp-content/themes/pagina/img/logo_uasd.svg"
+            alt=""
+          />
+        </a>
       </div>
-      <div class="info">
-        © 2023, Universidad Autónoma de Santo Domingo - Primada de América,
-        Fundada el 28 de octubre de 1538 Alma Máter, Santo Domingo, República
-        Dominicana Teléfono: 1 (809) 535-8273 | Fax: 1 (809)508-7374 |
-        info@uasd.edu.do
+      <div class="footer-info">
+        <span>
+          ©Egresados 2023, Universidad Autónoma de Santo Domingo - Primada de
+          América, Fundada el 28 de octubre de 1538 Alma Máter, Santo Domingo,
+          República Dominicana
+        </span>
       </div>
     </footer>
   </body>

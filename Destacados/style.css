@@ -24,9 +24,43 @@
 }
 .tarjetasDestacados {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 35px;
   padding: 0 150px;
   margin-bottom: 150px;
+}
+.filtro input {
+  font-family: "Lato, sans-serif";
+  font-size: 15px;
+  color: rgb(46, 46, 46);
+  width: 150px;
+  padding: 3px;
+  border: 0.5px solid rgb(201, 199, 199);
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+@media screen and (max-width: 750px) {
+  .destacados {
+    width: 100%;
+    gap: 10px;
+    padding: 0 15px;
+    margin: 80px 0 50 0;
+  }
+
+  .tarjetasDestacados {
+    gap: 15px;
+    padding: 0 10px;
+    margin-bottom: 100px;
+  }
+  .destacados h1 {
+    font-size: 22px;
+  }
+  .filtro label {
+    font-size: 14px;
+  }
+  .filtro input {
+    font-size: 12px;
+  }
 }

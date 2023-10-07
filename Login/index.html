@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Egresados UASD</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="../Assets/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
       href="https://uasdvirtual.uasd.edu.do/diplomados/theme/image.php/uasdvirtual/theme/1695480598/favicon"
@@ -16,14 +16,29 @@
       <nav class="menu">
         <div class="logo">
           <img
-            class="logoT"
+            class=""
             src="https://uasd.edu.do/wp-content/themes/pagina/img/logo_uasd.svg"
             alt=""
           />
+
           <span class="logoT"> EGRESADOS</span>
+          <a src="" class="icon">
+            <svg
+              id="menu-button"
+              fill="#FFFFFF"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 50 50"
+              width="50px"
+              height="50px"
+            >
+              <path
+                d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"
+              />
+            </svg>
+          </a>
         </div>
 
-        <ul>
+        <ul id="mylinks" class="none">
           <li><a href="../">Inicio</a></li>
           <li>
             <a href="https://uasd.edu.do/estudiantes/" target="_blank"
@@ -32,29 +47,33 @@
           </li>
           <li><a href="../Destacados/">Destacados</a></li>
           <li><a href="../Blog/">Blog</a></li>
-          <li><a href="./Login/">Login</a></li>
+          <li><a href="./">Login</a></li>
         </ul>
       </nav>
     </header>
-    <!-- <h2>EGRESADOS UASD</h2> -->
+
     <div class="container" id="container">
-      <div class="form-container sign-up-container">
+      <div class="form-container sign-up-container" id="sign-up-container">
         <form action="#">
+          <img class="logo" src="./Escudo1.png" alt="logo" />
           <h1>Crea una Cuenta</h1>
 
           <input type="text" placeholder="Nombre" />
           <input type="email" placeholder="Correo" />
           <input type="password" placeholder="Contraseña" />
+          <a href="./">Tienes una cuenta?</a>
+
           <button>REGISTRARME</button>
         </form>
       </div>
-      <div class="form-container sign-in-container">
+      <div class="form-container sign-in-container" id="sign-in-container">
         <form action="#">
           <img class="logo" src="./Escudo1.png" alt="logo" />
 
           <input type="email" placeholder="Correo" />
           <input type="password" placeholder="Contraseña" />
           <a href="#">Olvido el usuario o contraseña?</a>
+          <a id="registrar">Nuevo? Registrate</a>
           <button>ENTRAR</button>
         </form>
       </div>
@@ -76,22 +95,28 @@
             <button class="ghost" id="signUp">REGISTRARME</button>
           </div>
         </div>
-        s
       </div>
     </div>
+    <footer>
+      <div class="logoFooter">
+        <a href="./">
+          <img
+            class="logo"
+            src="https://uasd.edu.do/wp-content/themes/pagina/img/logo_uasd.svg"
+            alt=""
+          />
+        </a>
+      </div>
+      <div class="footer-info">
+        <span>
+          ©Egresados 2023, Universidad Autónoma de Santo Domingo - Primada de
+          América, Fundada el 28 de octubre de 1538 Alma Máter, Santo Domingo,
+          República Dominicana
+        </span>
+      </div>
+    </footer>
+    <script src="../Assets/MenuMovil.js"></script>
 
-    <!-- <footer>
-      <p>
-        Created with <i class="fa fa-heart"></i> by
-        <a target="_blank" href="https://florin-pop.com">Florin Pop</a>
-        - Read how I created this and how you can join the challenge
-        <a
-          target="_blank"
-          href="https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/"
-          >here</a
-        >.
-      </p>
-    </footer> -->
     <script src="App.js"></script>
   </body>
 </html>
