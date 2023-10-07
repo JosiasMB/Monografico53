@@ -197,9 +197,6 @@ input {
 }
 
 @media screen and (max-width: 800px) {
-  body {
-    overflow: hidden;
-  }
   .container {
     border-radius: 0;
     width: 80%;
@@ -210,15 +207,16 @@ input {
     font-size: 10px;
     font-weight: 300;
     padding: 12px 40px;
+    margin: 5px 0;
   }
   form {
     padding: 0;
   }
-  form img {
-    width: 40%;
+  .escudo {
+    width: 35%;
   }
   header {
-    margin-bottom: 80px;
+    margin-bottom: 20px;
   }
   h1 {
     font-size: 20px;
@@ -238,7 +236,7 @@ input {
   }
 
   .form-container a {
-    margin: 4px 0;
+    margin: 8px 0;
   }
   .block {
     display: none;
